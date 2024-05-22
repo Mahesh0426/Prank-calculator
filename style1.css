@@ -1,0 +1,92 @@
+body {
+  background-color: #ecf0f3;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  /* border: 1px solid black; */
+  min-height: 51vh;
+  width: 26%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 15px 15px 20px #cbced1, -15px -15px 20px #ffffff;
+  /* background: rgb(160, 162, 129); */
+  border-radius: 8px;
+}
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.display-box {
+  height: 50px;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: end;
+  font-size: 1.5rem;
+  background-color: #ecf0f3;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+  margin-top: 15px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 350px;
+  gap: 12px;
+}
+button {
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  flex: 1;
+  /* box-shadow: 10px 10px 20px #cbced1, -10px -10px 20px #ffffff; */
+  border: none;
+  margin-bottom: 25px;
+  background-color: #d8eefa;
+}
+button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.text-color {
+  color: chocolate;
+  background: #e9c9e7;
+}
+
+.equal-button {
+  flex-basis: 28%;
+  background-color: rgb(236, 113, 18);
+  color: white;
+}
+/* Prank Animation */
+.prank {
+  background-color: red;
+  color: white;
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(10px);
+  }
+
+  50% {
+    transform: translateX(-10px);
+  }
+
+  75% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
